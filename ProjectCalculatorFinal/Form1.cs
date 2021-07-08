@@ -60,10 +60,22 @@ namespace ProjectCalculatorFinal
         private void operator_click(object sender, EventArgs e)
         {
             Button b = (Button)sender;
-            operation = b.Text;
-            value = Double.Parse(result.Text);
-            operation_pressed = true;
-            lblEquation.Text = value + " " + operation;
+
+            if (value != 0)
+            {
+                btnEquals.PerformClick();
+                operation_pressed = true;
+                operation = b.Text;
+                lblEquation.Text = value + " " + operation;
+
+            }
+            else
+            {
+                operation = b.Text;
+                value = Double.Parse(result.Text);
+                operation_pressed = true;
+                lblEquation.Text = value + " " + operation;
+            }
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -86,7 +98,9 @@ namespace ProjectCalculatorFinal
                 default:
                     break;
             }//end switch
-            operation_pressed = false;
+
+            value = Int32.Parse(result.Text);
+            operation = "";
         }
     }
 }
