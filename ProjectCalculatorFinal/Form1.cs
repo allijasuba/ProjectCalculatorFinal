@@ -19,6 +19,10 @@ namespace ProjectCalculatorFinal
 
         private void button_click(object sender, EventArgs e)
         {
+            if (result.Text == "0")
+                result.Clear();
+
+
             Button b = (Button)sender;
             result.Text = result.Text + b.Text;
         }
