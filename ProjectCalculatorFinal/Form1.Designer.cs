@@ -49,6 +49,7 @@ namespace ProjectCalculatorFinal
             this.btnDot = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnSqrt = new System.Windows.Forms.Button();
+            this.btnClearEntry = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -108,18 +109,18 @@ namespace ProjectCalculatorFinal
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.btnClear.Location = new System.Drawing.Point(329, 107);
+            this.btnClear.Location = new System.Drawing.Point(329, 166);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(71, 68);
+            this.btnClear.Size = new System.Drawing.Size(71, 52);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(329, 181);
+            this.btnDelete.Location = new System.Drawing.Point(329, 226);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(71, 68);
+            this.btnDelete.Size = new System.Drawing.Size(71, 52);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "⌫ ";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -213,9 +214,9 @@ namespace ProjectCalculatorFinal
             // btnEquals
             // 
             this.btnEquals.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.btnEquals.Location = new System.Drawing.Point(329, 255);
+            this.btnEquals.Location = new System.Drawing.Point(329, 284);
             this.btnEquals.Name = "btnEquals";
-            this.btnEquals.Size = new System.Drawing.Size(71, 142);
+            this.btnEquals.Size = new System.Drawing.Size(71, 113);
             this.btnEquals.TabIndex = 20;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
@@ -263,11 +264,23 @@ namespace ProjectCalculatorFinal
             this.btnSqrt.Text = "sqrt";
             this.btnSqrt.UseVisualStyleBackColor = true;
             // 
+            // btnClearEntry
+            // 
+            this.btnClearEntry.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.btnClearEntry.Location = new System.Drawing.Point(329, 107);
+            this.btnClearEntry.Name = "btnClearEntry";
+            this.btnClearEntry.Size = new System.Drawing.Size(71, 52);
+            this.btnClearEntry.TabIndex = 22;
+            this.btnClearEntry.Text = "CE";
+            this.btnClearEntry.UseVisualStyleBackColor = true;
+            this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 426);
+            this.Controls.Add(this.btnClearEntry);
             this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlus);
@@ -320,6 +333,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnSqrt;
+        private System.Windows.Forms.Button btnClearEntry;
     }
 }
 

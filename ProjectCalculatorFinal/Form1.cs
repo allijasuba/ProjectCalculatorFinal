@@ -26,5 +26,10 @@ namespace ProjectCalculatorFinal
             Button b = (Button)sender;
             result.Text = result.Text + b.Text;
         }
+
+        private void btnClearEntry_Click(object sender, EventArgs e)
+        {
+            result.Text = "0";
+        }
     }
 }
