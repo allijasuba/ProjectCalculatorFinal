@@ -31,5 +31,10 @@ namespace ProjectCalculatorFinal
         {
             result.Text = "0";
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            result.Clear();
+        }
     }
 }
