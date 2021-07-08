@@ -16,5 +16,11 @@ namespace ProjectCalculatorFinal
         {
             InitializeComponent();
         }
+
+        private void button_click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            result.Text = result.Text + b.Text;
+        }
     }
 }

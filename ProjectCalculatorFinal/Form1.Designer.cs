@@ -70,6 +70,7 @@ namespace ProjectCalculatorFinal
             this.btnSeven.TabIndex = 1;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = true;
+            this.btnSeven.Click += new System.EventHandler(this.button_click);
             // 
             // btnEight
             // 
@@ -80,6 +81,7 @@ namespace ProjectCalculatorFinal
             this.btnEight.TabIndex = 2;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = true;
+            this.btnEight.Click += new System.EventHandler(this.button_click);
             // 
             // btnNine
             // 
@@ -90,6 +92,7 @@ namespace ProjectCalculatorFinal
             this.btnNine.TabIndex = 3;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = true;
+            this.btnNine.Click += new System.EventHandler(this.button_click);
             // 
             // btnDivide
             // 
@@ -140,6 +143,7 @@ namespace ProjectCalculatorFinal
             this.btnSix.TabIndex = 8;
             this.btnSix.Text = "6";
             this.btnSix.UseVisualStyleBackColor = true;
+            this.btnSix.Click += new System.EventHandler(this.button_click);
             // 
             // btnFive
             // 
@@ -150,6 +154,7 @@ namespace ProjectCalculatorFinal
             this.btnFive.TabIndex = 7;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = true;
+            this.btnFive.Click += new System.EventHandler(this.button_click);
             // 
             // btnFour
             // 
@@ -160,6 +165,7 @@ namespace ProjectCalculatorFinal
             this.btnFour.TabIndex = 6;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = true;
+            this.btnFour.Click += new System.EventHandler(this.button_click);
             // 
             // btnMinus
             // 
@@ -180,6 +186,7 @@ namespace ProjectCalculatorFinal
             this.btnThree.TabIndex = 13;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = true;
+            this.btnThree.Click += new System.EventHandler(this.button_click);
             // 
             // btnTwo
             // 
@@ -190,6 +197,7 @@ namespace ProjectCalculatorFinal
             this.btnTwo.TabIndex = 12;
             this.btnTwo.Text = "2";
             this.btnTwo.UseVisualStyleBackColor = true;
+            this.btnTwo.Click += new System.EventHandler(this.button_click);
             // 
             // btnOne
             // 
@@ -200,6 +208,7 @@ namespace ProjectCalculatorFinal
             this.btnOne.TabIndex = 11;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = true;
+            this.btnOne.Click += new System.EventHandler(this.button_click);
             // 
             // btnEquals
             // 
@@ -230,6 +239,7 @@ namespace ProjectCalculatorFinal
             this.btnDot.TabIndex = 18;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = true;
+            this.btnDot.Click += new System.EventHandler(this.button_click);
             // 
             // btnZero
             // 
@@ -240,6 +250,7 @@ namespace ProjectCalculatorFinal
             this.btnZero.TabIndex = 16;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
+            this.btnZero.Click += new System.EventHandler(this.button_click);
             // 
             // btnSqrt
             // 
@@ -281,6 +292,7 @@ namespace ProjectCalculatorFinal
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
             this.Text = "Calculator";
+            this.Click += new System.EventHandler(this.button_click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
