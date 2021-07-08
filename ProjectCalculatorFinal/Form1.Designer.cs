@@ -50,12 +50,13 @@ namespace ProjectCalculatorFinal
             this.btnZero = new System.Windows.Forms.Button();
             this.btnSqrt = new System.Windows.Forms.Button();
             this.btnClearEntry = new System.Windows.Forms.Button();
+            this.lblEquation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // result
             // 
             this.result.Font = new System.Drawing.Font("Arial Narrow", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.result.Location = new System.Drawing.Point(21, 30);
+            this.result.Location = new System.Drawing.Point(21, 36);
             this.result.Name = "result";
             this.result.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.result.Size = new System.Drawing.Size(379, 50);
@@ -282,11 +283,21 @@ namespace ProjectCalculatorFinal
             this.btnClearEntry.UseVisualStyleBackColor = true;
             this.btnClearEntry.Click += new System.EventHandler(this.btnClearEntry_Click);
             // 
+            // lblEquation
+            // 
+            this.lblEquation.AutoSize = true;
+            this.lblEquation.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquation.Location = new System.Drawing.Point(25, 10);
+            this.lblEquation.Name = "lblEquation";
+            this.lblEquation.Size = new System.Drawing.Size(0, 20);
+            this.lblEquation.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 426);
+            this.Controls.Add(this.lblEquation);
             this.Controls.Add(this.btnClearEntry);
             this.Controls.Add(this.btnSqrt);
             this.Controls.Add(this.btnEquals);
@@ -341,6 +352,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnSqrt;
         private System.Windows.Forms.Button btnClearEntry;
+        private System.Windows.Forms.Label lblEquation;
     }
 }
 

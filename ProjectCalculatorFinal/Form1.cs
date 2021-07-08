@@ -57,10 +57,12 @@ namespace ProjectCalculatorFinal
             operation = b.Text;
             value = Double.Parse(result.Text);
             operation_pressed = true;
+            lblEquation.Text = value + " " + operation;
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
+            lblEquation.Text = "";
             switch (operation)
             {
                 case "+":
