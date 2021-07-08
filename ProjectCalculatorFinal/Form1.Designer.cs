@@ -122,6 +122,7 @@ namespace ProjectCalculatorFinal
             // 
             // btnDelete
             // 
+            this.btnDelete.Font = new System.Drawing.Font("Arial Narrow", 24F);
             this.btnDelete.Location = new System.Drawing.Point(329, 226);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(71, 52);
@@ -272,7 +273,7 @@ namespace ProjectCalculatorFinal
             this.button1.TabIndex = 21;
             this.button1.Text = "AC";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.operator_click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnClearEntry
             // 
@@ -298,12 +299,13 @@ namespace ProjectCalculatorFinal
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button2.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button2.Location = new System.Drawing.Point(252, 107);
+            this.button2.Location = new System.Drawing.Point(252, 106);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(71, 55);
             this.button2.TabIndex = 24;
             this.button2.Text = "AC";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
