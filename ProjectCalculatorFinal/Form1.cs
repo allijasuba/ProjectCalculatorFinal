@@ -58,5 +58,27 @@ namespace ProjectCalculatorFinal
             value = Double.Parse(result.Text);
             operation_pressed = true;
         }
+
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            switch (operation)
+            {
+                case "+":
+                    result.Text = (value + Double.Parse(result.Text)).ToString();
+                    break;
+                case "-":
+                    result.Text = (value - Double.Parse(result.Text)).ToString();
+                    break;
+                case "*":
+                    result.Text = (value * Double.Parse(result.Text)).ToString();
+                    break;
+                case "/":
+                    result.Text = (value / Double.Parse(result.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }//end switch
+            operation_pressed = false;
+        }
     }
 }
