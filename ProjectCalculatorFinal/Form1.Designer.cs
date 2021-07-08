@@ -105,6 +105,7 @@ namespace ProjectCalculatorFinal
             this.btnDivide.TabIndex = 4;
             this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.operator_click);
             // 
             // btnClear
             // 
@@ -136,6 +137,7 @@ namespace ProjectCalculatorFinal
             this.btnMultiply.TabIndex = 9;
             this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
+            this.btnMultiply.Click += new System.EventHandler(this.operator_click);
             // 
             // btnSix
             // 
@@ -179,6 +181,7 @@ namespace ProjectCalculatorFinal
             this.btnMinus.TabIndex = 14;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.operator_click);
             // 
             // btnThree
             // 
@@ -232,6 +235,7 @@ namespace ProjectCalculatorFinal
             this.btnPlus.TabIndex = 19;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.operator_click);
             // 
             // btnDot
             // 
