@@ -36,5 +36,13 @@ namespace ProjectCalculatorFinal
         {
             result.Clear();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (result.Text.Length > 0)
+            {
+                result.Text = result.Text.Remove(result.Text.Length - 1, 1);
+            }
+        }
     }
 }
