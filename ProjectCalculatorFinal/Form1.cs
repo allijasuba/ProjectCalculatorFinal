@@ -30,7 +30,13 @@ namespace ProjectCalculatorFinal
 
             operation_pressed = false;
             Button b = (Button)sender;
-            result.Text = result.Text + b.Text;
+            if (b.Text == ".")
+            {
+                if (!result.Text.Contains("."))
+                    result.Text = result.Text + b.Text;
+            }
+            else 
+                result.Text = result.Text + b.Text;
         }
 
         private void btnClearEntry_Click(object sender, EventArgs e)
