@@ -42,11 +42,13 @@ namespace ProjectCalculatorFinal
         private void btnClearEntry_Click(object sender, EventArgs e)
         {
             result.Text = "0";
+            lblEquation.Text = "";
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             result.Clear();
+            lblEquation.Text = "";
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
