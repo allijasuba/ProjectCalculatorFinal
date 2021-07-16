@@ -50,6 +50,7 @@ namespace ProjectCalculatorFinal
             this.btnZero = new System.Windows.Forms.Button();
             this.btnClearEntry = new System.Windows.Forms.Button();
             this.lblEquation = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -337,12 +338,27 @@ namespace ProjectCalculatorFinal
             this.lblEquation.Size = new System.Drawing.Size(0, 20);
             this.lblEquation.TabIndex = 23;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Thistle;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.button1.Location = new System.Drawing.Point(252, 107);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 55);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "sqrt";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.operator_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(424, 426);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblEquation);
             this.Controls.Add(this.btnClearEntry);
             this.Controls.Add(this.btnEquals);
@@ -400,6 +416,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnClearEntry;
         private System.Windows.Forms.Label lblEquation;
+        private System.Windows.Forms.Button button1;
     }
 }
 

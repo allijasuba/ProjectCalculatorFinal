@@ -63,11 +63,17 @@ namespace ProjectCalculatorFinal
 
             if (value != 0)
             {
+                if (b.Text == "sqrt")
+                    result.Text = Math.Sqrt(Double.Parse(result.Text)).ToString();
                 btnEquals.PerformClick();
                 operation_pressed = true;
                 operation = b.Text;
                 lblEquation.Text = value + " " + operation;
-
+            }
+            else if (b.Text == "sqrt")
+            {
+                result.Text = Math.Sqrt(Double.Parse(result.Text)).ToString();
+                value = Math.Sqrt(Double.Parse(result.Text));
             }
             else
             {
