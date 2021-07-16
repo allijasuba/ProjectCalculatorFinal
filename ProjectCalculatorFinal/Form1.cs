@@ -120,5 +120,13 @@ namespace ProjectCalculatorFinal
             a = Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text);
             result.Text = System.Convert.ToString(a);
         }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            Double a;
+
+            a = Convert.ToDouble(result.Text) / Convert.ToDouble(100);
+            result.Text = System.Convert.ToString(a);
+        }
     }
 }

@@ -51,7 +51,7 @@ namespace ProjectCalculatorFinal
             this.btnClearEntry = new System.Windows.Forms.Button();
             this.lblEquation = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
             this.btnSquared = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -355,18 +355,19 @@ namespace ProjectCalculatorFinal
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.operator_click);
             // 
-            // button2
+            // btnPercent
             // 
-            this.button2.BackColor = System.Drawing.Color.Thistle;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button2.Location = new System.Drawing.Point(406, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 68);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "sqrt";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnPercent.BackColor = System.Drawing.Color.Thistle;
+            this.btnPercent.FlatAppearance.BorderSize = 0;
+            this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPercent.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.btnPercent.Location = new System.Drawing.Point(406, 329);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(71, 68);
+            this.btnPercent.TabIndex = 25;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = false;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
             // 
             // btnPi
             // 
@@ -404,7 +405,7 @@ namespace ProjectCalculatorFinal
             this.ClientSize = new System.Drawing.Size(504, 431);
             this.Controls.Add(this.btnSquared);
             this.Controls.Add(this.btnPi);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblEquation);
             this.Controls.Add(this.btnClearEntry);
@@ -464,7 +465,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button btnClearEntry;
         private System.Windows.Forms.Label lblEquation;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPercent;
         private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button btnSquared;
     }
