@@ -52,7 +52,7 @@ namespace ProjectCalculatorFinal
             this.lblEquation = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPi = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -368,18 +368,19 @@ namespace ProjectCalculatorFinal
             this.button2.Text = "sqrt";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnPi
             // 
-            this.button3.BackColor = System.Drawing.Color.Thistle;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button3.Location = new System.Drawing.Point(406, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 68);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "sqrt";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnPi.BackColor = System.Drawing.Color.Thistle;
+            this.btnPi.FlatAppearance.BorderSize = 0;
+            this.btnPi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPi.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.btnPi.Location = new System.Drawing.Point(406, 181);
+            this.btnPi.Name = "btnPi";
+            this.btnPi.Size = new System.Drawing.Size(71, 68);
+            this.btnPi.TabIndex = 26;
+            this.btnPi.Text = "π";
+            this.btnPi.UseVisualStyleBackColor = false;
+            this.btnPi.Click += new System.EventHandler(this.btnPi_Click);
             // 
             // button4
             // 
@@ -401,7 +402,7 @@ namespace ProjectCalculatorFinal
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(504, 431);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnPi);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblEquation);
@@ -463,7 +464,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Label lblEquation;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPi;
         private System.Windows.Forms.Button button4;
     }
 }

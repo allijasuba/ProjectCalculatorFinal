@@ -108,5 +108,9 @@ namespace ProjectCalculatorFinal
             operation = "";
         }
 
+        private void btnPi_Click(object sender, EventArgs e)
+        {
+            result.Text = "3.14159";
+        }
     }
 }
