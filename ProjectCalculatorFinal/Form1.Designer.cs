@@ -53,7 +53,7 @@ namespace ProjectCalculatorFinal
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnPi = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnSquared = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -382,18 +382,19 @@ namespace ProjectCalculatorFinal
             this.btnPi.UseVisualStyleBackColor = false;
             this.btnPi.Click += new System.EventHandler(this.btnPi_Click);
             // 
-            // button4
+            // btnSquared
             // 
-            this.button4.BackColor = System.Drawing.Color.Thistle;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button4.Location = new System.Drawing.Point(406, 255);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(71, 68);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "sqrt";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSquared.BackColor = System.Drawing.Color.Thistle;
+            this.btnSquared.FlatAppearance.BorderSize = 0;
+            this.btnSquared.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSquared.Font = new System.Drawing.Font("Arial Narrow", 24F);
+            this.btnSquared.Location = new System.Drawing.Point(406, 255);
+            this.btnSquared.Name = "btnSquared";
+            this.btnSquared.Size = new System.Drawing.Size(71, 68);
+            this.btnSquared.TabIndex = 27;
+            this.btnSquared.Text = "x²";
+            this.btnSquared.UseVisualStyleBackColor = false;
+            this.btnSquared.Click += new System.EventHandler(this.btnSquared_Click);
             // 
             // Form1
             // 
@@ -401,7 +402,7 @@ namespace ProjectCalculatorFinal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(504, 431);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnSquared);
             this.Controls.Add(this.btnPi);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -465,7 +466,7 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnPi;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSquared;
     }
 }
 

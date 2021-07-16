@@ -112,5 +112,13 @@ namespace ProjectCalculatorFinal
         {
             result.Text = "3.14159";
         }
+
+        private void btnSquared_Click(object sender, EventArgs e)
+        {
+            Double a;
+
+            a = Convert.ToDouble(result.Text) * Convert.ToDouble(result.Text);
+            result.Text = System.Convert.ToString(a);
+        }
     }
 }
