@@ -48,10 +48,8 @@ namespace ProjectCalculatorFinal
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnClearEntry = new System.Windows.Forms.Button();
             this.lblEquation = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // result
@@ -316,20 +314,6 @@ namespace ProjectCalculatorFinal
             this.btnZero.UseVisualStyleBackColor = false;
             this.btnZero.Click += new System.EventHandler(this.button_click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Thistle;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button1.Location = new System.Drawing.Point(252, 107);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 55);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "AC";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnClearEntry
             // 
             this.btnClearEntry.BackColor = System.Drawing.Color.Thistle;
@@ -353,30 +337,14 @@ namespace ProjectCalculatorFinal
             this.lblEquation.Size = new System.Drawing.Size(0, 20);
             this.lblEquation.TabIndex = 23;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Thistle;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial Narrow", 24F);
-            this.button2.Location = new System.Drawing.Point(252, 107);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 55);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "AC";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(424, 426);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.lblEquation);
             this.Controls.Add(this.btnClearEntry);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnDot);
@@ -430,10 +398,8 @@ namespace ProjectCalculatorFinal
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnDot;
         private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnClearEntry;
         private System.Windows.Forms.Label lblEquation;
-        private System.Windows.Forms.Button button2;
     }
 }
 

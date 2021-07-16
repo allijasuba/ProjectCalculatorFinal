@@ -21,58 +21,6 @@ namespace ProjectCalculatorFinal
             InitializeComponent();
         }
 
-        public void disable()
-        {
-            result.Enabled = false;
-            button2.Hide();
-            button1.Show();
-            btnOne.Enabled = false;
-            btnTwo.Enabled = false;
-            btnThree.Enabled = false;
-            btnFour.Enabled = false;
-            btnFive.Enabled = false;
-            btnSix.Enabled = false;
-            btnSeven.Enabled = false;
-            btnEight.Enabled = false;
-            btnNine.Enabled = false;
-            btnZero.Enabled = false;
-            btnDot.Enabled = false;
-            btnClear.Enabled = false;
-            btnClearEntry.Enabled = false;
-            btnPlus.Enabled = false;
-            btnMinus.Enabled = false;
-            btnMultiply.Enabled = false;
-            btnDivide.Enabled = false;
-            btnEquals.Enabled = false;
-            btnDelete.Enabled = false;
-        }
-
-        public void enable()
-        {
-            result.Enabled = true;
-            button2.Show();
-            button1.Hide();
-            btnOne.Enabled = true;
-            btnTwo.Enabled = true;
-            btnThree.Enabled = true;
-            btnFour.Enabled = true;
-            btnFive.Enabled = true;
-            btnSix.Enabled = true;
-            btnSeven.Enabled = true;
-            btnEight.Enabled = true;
-            btnNine.Enabled = true;
-            btnZero.Enabled = true;
-            btnDot.Enabled = true;
-            btnClear.Enabled = true;
-            btnClearEntry.Enabled = true;
-            btnPlus.Enabled = true;
-            btnMinus.Enabled = true;
-            btnMultiply.Enabled = true;
-            btnDivide.Enabled = true;
-            btnEquals.Enabled = true;
-            btnDelete.Enabled = true;
-        }
-
         private void button_click(object sender, EventArgs e)
         {
             if ((result.Text == "0") || (operation_pressed))
@@ -150,19 +98,9 @@ namespace ProjectCalculatorFinal
                 default:
                     break;
             }//end switch
-
-            value = Int32.Parse(result.Text);
+            value = Double.Parse(result.Text);
             operation = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            enable();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            disable();
-        }
     }
 }
